@@ -15,26 +15,26 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-- id: www-pblaze-com
-  name: www.pblaze.com
-  url: 'https://www.pblaze.com/'
-  method: GET
-  expectStatus: 200
+  - id: www-pblaze-com
+    name: www.pblaze.com
+    description: 'pblaze首页'
+    url: 'https://www.pblaze.com/'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
 
-- id: sv-gui-ink
-  name: sv.gui.ink
-  url: 'https://sv.gui.ink/'
-  method: GET
-  expectStatus: 200
-
-- id: www-2k2-cc
-  name: www.2k2.cc
-  url: 'https://www.2k2.cc/'
-  method: GET
-  expectStatus: 200
-
-- id: x-kalijerry-uk
-  name: x.kalijerry.uk
-  url: 'https://x.kalijerry.uk/'
-  method: GET
-  expectStatus: 200
+  - id: sv-gui-ink
+    name: sv.gui.ink
+    description: '探针'
+    url: 'https://sv.gui.ink/'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: mail-pblaze-com
+    name: mail.pblaze.com
+    description: 'pblaze 邮箱'
+    url: 'https://mail.pblaze.com/'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
